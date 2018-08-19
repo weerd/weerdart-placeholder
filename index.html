@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diego Lorenzo">
+    <meta name="description" content="Weerd Art is the art portfolio of Diego Lorenzo.">
+    <meta name="keywords" content="art, drawing, illustration, digital art, weerd art">
+
+    <title>Weerd Art</title>
+
+    <link rel="icon" type="image/ico" href="/favicon.ico?v1">
+    
+    <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        align-items: flex-start;
+        background-color: #dccc55;
+        display: flex;
+        justify-content: center;
+      }
+
+      @media all and (min-width: 500px) {
+        body {
+          align-items: center;
+        }
+      }
+
+      img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        width: auto;
+      }
+
+      .logo {
+        padding: 50px 0;
+      }
+    </style>
+  </head>
+
+  <body id="container">
+    <img class="logo" src="/weerdart_logo.png" />
+
+    <script>
+      const colors = ['#dccc55', '#be55dc', '#85dc55', '#dc6b55', '#55b4dc'];
+
+      const container = document.getElementById('container');
+
+      const selectedColor = Math.floor(Math.random() * (colors.length - 1));
+
+      container.style.backgroundColor = colors[selectedColor];
+    </script>
+  </body>
+
+</html>
