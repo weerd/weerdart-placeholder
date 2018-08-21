@@ -40,14 +40,30 @@
         width: auto;
       }
 
-      .logo {
-        padding: 50px 0;
+      .block {
+        padding: 50px 20px;
+      }
+
+      .block p {
+        color: rgba(0,0,0,0.4);
+        font: italic bold 1em/1.5 Helvetica, sans-serif;
+        margin: 0.5em 0 1em;
+        text-align: center;
+      }
+
+      @media all and (min-width: 400px) {
+        .block p {
+          font-size: 2em;   
+        }
       }
     </style>
   </head>
 
   <body id="container">
-    <img class="logo" src="/weerdart_logo.png" />
+    <div class="block">
+      <img src="/weerdart_logo.png" alt="Weerd Art logo" />
+      <p>portfolio coming soon</p>
+    </div>
 
     <script>
       const colors = ['#dccc55', '#be55dc', '#85dc55', '#dc6b55', '#55b4dc'];
